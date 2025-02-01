@@ -1,17 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void calculate(double num1, double num2, char op) {
-    if (op == '+') {
-        cout << "Result: " << num1 + num2 << endl;
-    } else if (op == '-') {
-        cout << "Result: " << num1 - num2 << endl;
-    } else if (op == '*') {
-        cout << "Result: " << num1 * num2 << endl;
-    } else if (op == '/') {
-        cout << "Result: " << num1 / num2 << endl;
-    }
-}
+void calculate(double num1, double num2, char op);
 
 int main() {    
     double num1, num2;
@@ -66,4 +56,16 @@ int main() {
     cout << "-----------------------------------" << endl;
 
     return 0;
+}
+
+void calculate(double num1, double num2, char op) {
+    if (op == '+') {
+        cout << "Result: " << num1 + num2 << endl;
+    } else if (op == '-') {
+        cout << "Result: " << num1 - num2 << endl;
+    } else if (op == '*') {
+        cout << "Result: " << num1 * num2 << endl;
+    } else if (op == '/') {
+        cout << "Result: " << num1 / num2 << endl;
+    }
 }
